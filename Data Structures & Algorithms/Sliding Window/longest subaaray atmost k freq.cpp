@@ -8,6 +8,8 @@
 
 // A subarray is a contiguous non-empty sequence of elements within an array.
 //leetcode 2958
+#include<bits/stdc++.h>
+using namespace std;
 class Solution {
 public:
     int maxSubarrayLength(vector<int>& nums, int k) {
@@ -27,3 +29,9 @@ public:
         return mx;
     }
 };
+int main(){
+    Solution s;
+    vector<int> nums={1,2,3,1,2,3};
+    int k=2;
+    cout<<s.maxSubarrayLength(nums,k);
+}
